@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+
+    <meta name="description" content="Formulario de contacto del portafolio de Tu Nombre.">
+    <title>Inicio | Bryan Perdomo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagina">
+
+        <aside class="pagina__lateral">
+            <img class="foto" src="perfil.jpeg" alt="Foto de perfil de Tu Nombre" width="160" height="160">
+
+            <nav class="menu" aria-label="Navegación principal">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
+                    <li class="menu__item"><a href="proyectos.html" class="menu__enlace">Proyectos</a></li>
+                    <li class="menu__item"><a href="acercaDe.html" class="menu__enlace">Acerca de</a></li>
+                    <li class="menu__item"><a href="contacto.html" class="menu__enlace menu__enlace--activo" aria-current="page">Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- ===== CABECERA ===== -->
+        <header class="pagina__cabecera presentacion">
+            <h1 class="presentacion__titulo">Contacto</h1>
+            <p class="presentacion__texto">¿Tienes una idea o un proyecto? Escríbeme y te responderé pronto.</p>
+        </header>
+
+        <!-- ===== CONTENIDO PRINCIPAL ===== -->
+        <main class="pagina__principal pagina__principal--contacto">
+
+            <!-- Formulario con validaciones HTML5 -->
+            <section class="card">
+                <h2 class="card__titulo">Envíame un mensaje</h2>
+
+                <form class="formulario" action="#" method="post">
+
+                    <div class="formulario__grupo">
+                        <label for="nombre" class="formulario__etiqueta">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="formulario__campo"
+                               required minlength="3" maxlength="50"
+                               pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü ]+"
+                               title="Solo letras y espacios (3 a 50 caracteres)"
+                               autocomplete="name" placeholder="Tu nombre">
+                        <small class="formulario__ayuda">Solo letras, de 3 a 50 caracteres.</small>
+                    </div>
+
+                    <div class="formulario__grupo">
+                        <label for="correo" class="formulario__etiqueta">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" class="formulario__campo"
+                               required maxlength="100"
+                               autocomplete="email" placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <!-- Radio buttons: fieldset + legend agrupan las opciones -->
+                    <fieldset class="formulario__grupo formulario__grupo--opciones">
+                        <legend class="formulario__etiqueta">Género</legend>
+                        <div class="formulario__opciones">
+                            <label class="formulario__opcion">
+                                <input type="radio" name="genero" value="masculino" class="formulario__radio" required>
+                                Masculino
+                            </label>
+                            <label class="formulario__opcion">
+                                <input type="radio" name="genero" value="femenino" class="formulario__radio">
+                                Femenino
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="formulario__grupo">
+                        <label for="asunto" class="formulario__etiqueta">Asunto</label>
+                        <select id="asunto" name="asunto" class="formulario__campo" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="proyecto">Propuesta de proyecto</option>
+                            <option value="empleo">Oportunidad laboral</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="formulario__grupo">
+                        <label for="mensaje" class="formulario__etiqueta">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" class="formulario__campo formulario__campo--area"
+                                  required minlength="10" maxlength="500" rows="5"
+                                  placeholder="Escribe tu mensaje..."></textarea>
+                        <small class="formulario__ayuda">Máximo 500 caracteres.</small>
+                    </div>
+
+                    <button type="submit" class="boton boton--primario">Enviar mensaje</button>
+                </form>
+            </section>
+
+            <!-- Información adicional -->
+            <section class="card">
+                <h2 class="card__titulo">Otras formas de contacto</h2>
+                <ul class="contacto">
+                    <li class="contacto__item">📍 San Salvador, El Salvador</li>
+                    <li class="contacto__item"><a class="contacto__enlace" href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer class="pagina__pie">
+            <p>&copy; 2026 Bryan Perdomo. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
