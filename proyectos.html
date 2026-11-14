@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Política de Seguridad de Contenidos (CSP) -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+
+    <meta name="description" content="Proyectos frontend de Tu Nombre desarrollados con React, Vue y Bootstrap.">
+    <title>Inicio | Bryan Perdomo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagina">
+
+        <aside class="pagina__lateral">
+            <img class="foto" src="perfil.jpeg" alt="Foto de perfil de Tu Nombre" width="160" height="160">
+
+            <nav class="menu" aria-label="Navegación principal">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
+                    <li class="menu__item"><a href="proyectos.html" class="menu__enlace menu__enlace--activo" aria-current="page">Proyectos</a></li>
+                    <li class="menu__item"><a href="acercaDe.html" class="menu__enlace">Acerca de</a></li>
+                    <li class="menu__item"><a href="contacto.html" class="menu__enlace">Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <header class="pagina__cabecera presentacion">
+            <h1 class="presentacion__titulo">Mis proyectos</h1>
+            <p class="presentacion__texto">
+                Proyectos frontend en los que he aplicado React, Vue y Bootstrap
+                para crear interfaces modernas y responsivas.
+            </p>
+        </header>
+
+        <main class="pagina__principal">
+            <section class="card card--ancha">
+                <table class="tabla">
+                    <caption class="tabla__titulo">Resumen de proyectos</caption>
+
+                    <thead class="tabla__encabezado">
+                        <tr>
+                            <th scope="col" class="tabla__th">Proyecto</th>
+                            <th scope="col" class="tabla__th">Tecnologías</th>
+                            <th scope="col" class="tabla__th">Tipo</th>
+                            <th scope="col" class="tabla__th">Fecha</th>
+                            <th scope="col" class="tabla__th">Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="tabla__cuerpo">
+                        <tr class="tabla__fila">
+                            <td class="tabla__celda" data-label="Proyecto"><strong>TaskFlow</strong></td>
+                            <td class="tabla__celda" data-label="Tecnologías">React, JavaScript, CSS3</td>
+                            <td class="tabla__celda" data-label="Tipo">Aplicación web</td>
+                            <td class="tabla__celda" data-label="Fecha"><time datetime="2025-03">Marzo 2025</time></td>
+                            <td class="tabla__celda" data-label="Estado"><span class="estado estado--completado">Completado</span></td>
+                        </tr>
+                        <tr class="tabla__fila">
+                            <td class="tabla__celda" data-label="Proyecto"><strong>ClimaYa</strong></td>
+                            <td class="tabla__celda" data-label="Tecnologías">Vue.js, API REST, CSS3</td>
+                            <td class="tabla__celda" data-label="Tipo">Aplicación web</td>
+                            <td class="tabla__celda" data-label="Fecha"><time datetime="2025-08">Agosto 2025</time></td>
+                            <td class="tabla__celda" data-label="Estado"><span class="estado estado--completado">Completado</span></td>
+                        </tr>
+                        <tr class="tabla__fila">
+                            <td class="tabla__celda" data-label="Proyecto"><strong>Pupusería La Esquina</strong></td>
+                            <td class="tabla__celda" data-label="Tecnologías">Bootstrap 5, HTML5, CSS3</td>
+                            <td class="tabla__celda" data-label="Tipo">Landing page</td>
+                            <td class="tabla__celda" data-label="Fecha"><time datetime="2024-11">Noviembre 2024</time></td>
+                            <td class="tabla__celda" data-label="Estado"><span class="estado estado--mantenimiento">En mantenimiento</span></td>
+                        </tr>
+                        <tr class="tabla__fila">
+                            <td class="tabla__celda" data-label="Proyecto"><strong>VentasDash</strong></td>
+                            <td class="tabla__celda" data-label="Tecnologías">React, Bootstrap 5, Git</td>
+                            <td class="tabla__celda" data-label="Tipo">Panel administrativo</td>
+                            <td class="tabla__celda" data-label="Fecha"><time datetime="2025-10">Octubre 2025</time></td>
+                            <td class="tabla__celda" data-label="Estado"><span class="estado estado--progreso">En progreso</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <!-- ===== PIE DE PÁGINA ===== -->
+        <footer class="pagina__pie">
+            <p>&copy; 2026 Bryan Perdomo. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
