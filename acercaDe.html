@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Política de Seguridad de Contenidos (CSP) -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+
+    <meta name="description" content="Conoce más sobre Bryan Perdomo: su historia, formación, intereses y metas.">
+    <title>Inicio | Bryan Perdomo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagina">
+        <aside class="pagina__lateral">
+            <img class="foto" src="perfil.jpeg" alt="Foto de perfil de Tu Nombre" width="160" height="160">
+
+            <nav class="menu" aria-label="Navegación principal">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="index.html" class="menu__enlace">Inicio</a></li>
+                    <li class="menu__item"><a href="proyectos.html" class="menu__enlace">Proyectos</a></li>
+                    <li class="menu__item"><a href="acercaDe.html" class="menu__enlace menu__enlace--activo" aria-current="page">Acerca de</a></li>
+                    <li class="menu__item"><a href="contacto.html" class="menu__enlace">Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="pagina__cabecera presentacion">
+            <h1 class="presentacion__titulo">Acerca de mí</h1>
+            <p class="presentacion__texto">
+                Un poco de mi historia, lo que estudio, lo que me apasiona y hacia dónde quiero llegar.
+            </p>
+        </header>
+
+        <main class="pagina__principal pagina__principal--acerca">
+
+            <section class="card card--ancha">
+                <h2 class="card__titulo">Mi historia</h2>
+                <p class="card__texto">
+                    Soy de El Salvador y desde hace un tiempo descubrí que me encanta construir
+                    cosas en la web. Empecé con HTML y CSS por curiosidad, y poco a poco fui
+                    aprendiendo JavaScript, Git y Node.js. Hoy disfruto convertir ideas en sitios
+                    que se vean bien en cualquier pantalla y que sean fáciles de usar.
+                </p>
+                <p class="card__texto">
+                    Fuera de la programación soy una persona sociable: me gusta el fútbol, los
+                    videojuegos y pasar tiempo de calidad con mis amigos.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2 class="card__titulo">Intereses</h2>
+                <ul class="intereses">
+                    <li class="intereses__item">
+                        <span class="intereses__icono" aria-hidden="true"></span> Fútbol
+                    </li>
+                    <li class="intereses__item">
+                        <span class="intereses__icono" aria-hidden="true"></span> Videojuegos
+                    </li>
+                    <li class="intereses__item">
+                        <span class="intereses__icono" aria-hidden="true"></span> Novedades de programación
+                    </li>
+                    <li class="intereses__item">
+                        <span class="intereses__icono" aria-hidden="true"></span> Tiempo con amigos
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2 class="card__titulo">Mis metas</h2>
+                <ul class="metas">
+                    <li class="metas__item">Dominar JavaScript y un framework como React.</li>
+                    <li class="metas__item">Construir proyectos reales para mi portafolio.</li>
+                    <li class="metas__item">Conseguir mi primera experiencia como desarrollador.</li>
+                    <li class="metas__item">Seguir aprendiendo algo nuevo cada día.</li>
+                </ul>
+            </section>
+
+        </main>
+
+       <footer class="pagina__pie">
+            <p>&copy; 2026 Bryan Perdomo. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
