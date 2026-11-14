@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portafolio personal de Tu Nombre, desarrollador web frontend.">
+    <title>Inicio | Bryan Perdomo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagina">
+        <aside class="pagina__lateral">
+            <img class="foto" src="perfil.jpeg">
+
+            <nav class="menu" aria-label="Navegación principal">
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="index.html" class="menu__enlace menu__enlace--activo" aria-current="page">Inicio</a></li>
+                    <li class="menu__item"><a href="proyectos.html" class="menu__enlace">Proyectos</a></li>
+                    <li class="menu__item"><a href="acercaDe.html" class="menu__enlace">Acerca de</a></li>
+                    <li class="menu__item"><a href="contacto.html" class="menu__enlace">Contacto</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <header class="pagina__cabecera presentacion">
+            <h1 class="presentacion__titulo">¡Hola! Soy Bryan Perdomo</h1>
+            <p class="presentacion__texto">
+                Desarrollador web frontend. Me gusta crear sitios accesibles, rápidos y fáciles de usar.
+            </p>
+            <a href="proyectos.html" class="boton boton--primario">Ver mis proyectos</a>
+        </header>
+
+        <main class="pagina__principal">
+            <section class="card">
+                <h2 class="card__titulo">Sobre mí</h2>
+                <p class="card__texto">
+                    Soy una persona sociable, me encanta el fútbol, los videojuegos y pasar tiempo
+                    de calidad con mis amigos. Además, me gusta mucho aprender sobre novedades de
+                    programación y siempre estoy dispuesto a aprender cosas nuevas.
+                </p>
+            </section>
+
+            <section class="card">
+                <h2 class="card__titulo">Habilidades</h2>
+                <ul class="habilidades">
+                    <li class="habilidades__item">HTML5</li>
+                    <li class="habilidades__item">CSS3</li>
+                    <li class="habilidades__item">JavaScript</li>
+                    <li class="habilidades__item">Git y GitHub</li>
+                    <li class="habilidades__item">Diseño responsivo</li>
+                    <li class="habilidades__item">NodeJs</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- ===== PIE DE PÁGINA ===== -->
+        <footer class="pagina__pie">
+            <p>&copy; 2026 Bryan Perdomo. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
